@@ -1,3 +1,13 @@
+const button = document.getElementById("firstButton");
+button.addEventListener("click", () => {
+  if (button.classList.contains("special")) {
+    button.classList.remove("special");
+  } else {
+  button.classList.add("special");
+  }
+});
+
+
 console.log("Hello World!");
 setupCounter();
 
@@ -17,3 +27,5 @@ function setupCounter() {
   document.querySelector("#increment").addEventListener("click", increment);
   document.querySelector("#decrement").addEventListener("click", decrement);
 }
+
+

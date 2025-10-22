@@ -1,19 +1,20 @@
 @import url("reset.css");
 /* This is a custom font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
 /* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
-  --color-primary: #2b2d42;
-  --color-secondary: #bfc6d2;
-  --color-background: #f5f5f5;
-  --color-accent: #535bf2;
+  --color-primary: #1c0b03;
+  --color-secondary: #820f50;
+  --color-background: #ffffff;
+  --color-accent: #495f9d;
 
   --border-radius: 0.5rem;
 
-  --font-titles: "Frank Ruhl Libre", serif;
-  --font-body: system-ui, sans-serif; /* system-ui matches the user's system font */
+  --font-titles: "Fjalla One", serif;
+  --font-body: "Jost", sans-serif; /* system-ui matches the user's system font */
 }
 
 body {
@@ -24,11 +25,37 @@ body {
 
 /* Layout */
 main {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 header {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-primary)
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.pics {
+  border-radius: 10px;
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 2%;
+  align-self: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-primary);
 }
 
 main,
@@ -50,6 +77,7 @@ nav {
 /* Text */
 p {
   margin: 1rem 0;
+  text-align: center;
 }
 
 ul,
@@ -94,7 +122,7 @@ h5 {
 }
 
 h6 {
-  font-size: 0.83em;
+  font-size: 0.8em;
 }
 
 blockquote {
@@ -106,8 +134,13 @@ blockquote {
 a {
   color: var(--color-accent);
   text-decoration: underline;
+  align-self: center;
 }
 a:hover {
+  text-decoration: none;
+}
+
+.forButton {
   text-decoration: none;
 }
 
@@ -123,6 +156,27 @@ table th {
   border: 1px solid var(--color-secondary);
 }
 
+.more-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.JS {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.lastst {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
 /* Forms */
 input,
 button,
@@ -133,26 +187,32 @@ select {
   border-radius: var(--border-radius);
 }
 
+.special {
+  background-color: yellowgreen;
+
+}
+
+
+button {
+  border: solid 1px var(--color-primary);
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 1s ease;
+
+}
+
+
+button:hover {
+  filter: brightness(150%);
+}
+
+button:active {
+  filter: brightness(80%);
+}
+
 fieldset {
   margin-top: 1.5rem;
   border: 1px solid var(--color-secondary);
 }
 
-.counter-button {
-  background-color: var(--color-accent);
-  width: 2rem;
-  height: 2rem;
-  color: white;
-  border: none;
-  border-radius: 1000px; /* Make the button round */
-  cursor: pointer;
-  font-weight: bold;
 
-  &:hover {
-    filter: brightness(120%);
-  }
-
-  &:active {
-    filter: brightness(80%);
-  }
-}
