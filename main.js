@@ -3,7 +3,7 @@ button.addEventListener("click", () => {
   if (button.classList.contains("special")) {
     button.classList.remove("special");
   } else {
-  button.classList.add("special");
+    button.classList.add("special");
   }
 });
 
