@@ -7,7 +7,7 @@
 :root {
   /* Define design variables */
   --color-primary: #1c0b03;
-  --color-secondary: #820f50;
+  --color-secondary: #0f2038;
   --color-background: #ffffff;
   --color-accent: #495f9d;
 
@@ -18,9 +18,8 @@
 }
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-background);
   font-family: var(--font-body);
+  transition: background-color 1s ease;
 }
 
 /* Layout */
@@ -33,14 +32,12 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: var(--color-primary)
 }
 
 .about {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: var(--color-primary);
 }
 
 .pics {
@@ -61,7 +58,6 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: var(--color-primary);
 }
 
 main,
@@ -194,10 +190,9 @@ select {
 }
 
 .special {
-  background-color: yellowgreen;
-
+  background-color: rgb(184, 255, 240);
+  color: var(--color-secondary);
 }
-
 
 button {
   border: solid 1px var(--color-primary);
@@ -209,7 +204,7 @@ button {
 
 
 button:hover {
-  filter: brightness(150%);
+  filter: brightness(120%);
 }
 
 button:active {
