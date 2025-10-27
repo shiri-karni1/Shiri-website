@@ -40,6 +40,19 @@ header {
   text-align: center;
 }
 
+.secHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.secPageButton {
+  text-decoration: none;
+  background-color: var(--color-accent);
+}
+
 .pics {
   border-radius: 10px;
   max-width: 30%;
@@ -171,6 +184,15 @@ table th {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+.opening {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 
